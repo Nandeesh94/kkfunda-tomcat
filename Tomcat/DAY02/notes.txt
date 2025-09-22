@@ -52,6 +52,30 @@ Access that web application from browser.
 http://13.233.32.177:9090/maven-web-application
 
 
+-------------------------------------------------------
+Steps to deploy via Tomcat Manager
+Make sure your WAR file is already on the server (you’ve built it and SCP’d it if needed).
+
+Log into Tomcat Manager (http://<server-ip>:8082/manager/html) with your admin credentials.
+
+Scroll to the Deploy section.
+
+Fill in:
+
+Context Path: /netflix (or whatever you want)
+
+Version: (leave blank)
+
+XML Configuration file path: (leave blank)
+
+WAR or Directory path: /opt/jenkins-java-project/target/netflix-clone.war
+
+Click Deploy.
+
+Watch the Manager page — if successful, your app will appear in the list of deployed applications.
+--------------------------------------------------------------------------------------------------------------------------------
+
+
 
 web servers                        vs					 app servers
 ---------------------------------------------------------------------------
