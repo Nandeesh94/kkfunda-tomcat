@@ -312,6 +312,16 @@ step 8: vi tomcat-users.xml ---> goto end of the file and add users.
 
   <user username="kk" password="password" roles="manager-gui,admin-gui"/>
   <user username="mahesh" password="password" roles="manager-gui,admin-gui"/>
+------------------------------------or----------------------------------------
+<role rolename="manager-gui"/>
+<role rolename="admin-gui"/>
+<user username="tomcat" password="StrongPass123" roles="manager-gui,admin-gui"/>
+
+Save and restart Tomcat:
+cd /opt/apache-tomcat-9.0.109/bin
+./shutdown.sh
+./startup.sh
+
 
 
 
