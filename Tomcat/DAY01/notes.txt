@@ -304,6 +304,7 @@ step 5: vi context.xml
       comment 21st and 22nd lines.
      <!--
      -->
+---------------------------------------------------------------------------------------------
 step 6: refresh the main page ----> It will ask the credentials.
 
 step 7: cd /opt/apache-tomcat-9.0.109/conf/ 
@@ -353,3 +354,24 @@ Assignment
 ==========
 
 create a multiple users and try to access.
+
+
+
+
+
+
+---------------------------------------------------------------
+-->
+cd /opt/apache-tomcat-9.0.109/conf
+vim tomcat-users.xml
+
+  <role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+  <role rolename="admin-gui"/>
+  <user username="tomcat" password="90199652" roles="manager-gui,manager-script,admin-gui"/>
+</tomcat-users>
+
+------------------------------------------------------------------------------------------------------
+
+
+
