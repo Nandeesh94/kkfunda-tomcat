@@ -361,7 +361,9 @@ create a multiple users and try to access.
 
 
 ---------------------------------------------------------------
--->
+
+
+
 cd /opt/apache-tomcat-9.0.109/conf
 vim tomcat-users.xml
 
@@ -372,6 +374,14 @@ vim tomcat-users.xml
 </tomcat-users>
 
 ------------------------------------------------------------------------------------------------------
+
+--> we can place our application into "Manager App"
+
+
+cd /opt/apache-tomcat-9.0.109/webapps/manager/META-INF
+vim manager
+ <!-- <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+  allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
 
 
 
